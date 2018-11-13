@@ -9,4 +9,5 @@ module.exports = function() {
     // console.error("FATAL ERROR: jwtPrivateKey is not defined.");
     // process.exit(1);
   }
+  // console.log(config.get("jwtPrivateKey"));
 };

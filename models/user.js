@@ -31,6 +31,7 @@ userShcema.methods.generateAuthToken = function() {
     { _id: this._id, name: this.name },
     config.get("jwtPrivateKey")
   );
+
   return token;
 };
 const User = mongoose.model("User", userShcema);
