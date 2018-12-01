@@ -45,11 +45,11 @@ const Rental = mongoose.model(
     },
     dateOut: {
       type: Date,
-      required: true,
+      // required: true,
       default: Date.now
     },
     dateReturned: {
-      type: Date,
+      type: Date
       // required: true
     },
     dateFee: {

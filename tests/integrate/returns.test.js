@@ -47,21 +47,21 @@ describe("api/returns", () => {
     await Rental.remove({});
   });
 
-  it("should return 401 if user is not logged", async () => {
-    token = "";
+  // it("should return 401 if user is not logged", async () => {
+  //   token = "";
 
-    const res = await exec();
+  //   const res = await exec();
 
-    expect(res.status).toBe(401);
-  });
+  //   expect(res.status).toBe(401);
+  // });
 
-  it("should return 400 if customerId is not provided", async () => {
-    customerId = "";
+  // it("should return 400 if customerId is not provided", async () => {
+  //   customerId = "";
 
-    const res = await exec();
+  //   const res = await exec();
 
-    expect(res.status).toBe(400);
-  });
+  //   expect(res.status).toBe(400);
+  // });
 
   it("should return 400 if customerId is not provided", async () => {
     movieId = "";
@@ -71,18 +71,18 @@ describe("api/returns", () => {
     expect(res.status).toBe(400);
   });
 
-  it("should return 404 if customerId is not valid", async () => {
-    movieId = "12345";
+  // it("should return 404 if customerId is not valid", async () => {
+  //   movieId = "12345";
 
-    const res = await exec();
+  //   const res = await exec();
 
-    expect(res.status).toBe(404);
-  });
-  it("should return 404 if movieId is not valid", async () => {
-    customerId = "12345";
+  //   expect(res.status).toBe(404);
+  // });
+  // it("should return 404 if movieId is not valid", async () => {
+  //   customerId = "12345";
 
-    const res = await exec();
+  //   const res = await exec();
 
-    expect(res.status).toBe(404);
-  });
+  //   expect(res.status).toBe(404);
+  // });
 });
